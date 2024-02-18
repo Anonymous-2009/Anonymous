@@ -5,11 +5,13 @@ import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import About from './components/About'
 import Login from './components/Login'
+import Error from './components/Error'
 
 const router = createBrowserRouter([
   {
     path:'/', 
-    element: <App />
+    element: <App />, 
+    errorElement:<Error/>
 },{
     path:'/about', 
     element: <About />
