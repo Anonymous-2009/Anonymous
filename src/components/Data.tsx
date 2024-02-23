@@ -25,7 +25,7 @@ fetchData()
     <>
       <Navbar/>
       <div className="bg-blue-100">
-        <p class="text-center hover:underline hover:text-blue-500 text-3xl "> the typecase use in coding </p>
+        <p className="text-center hover:underline hover:text-blue-500 text-3xl "> the typecase use in coding </p>
       {data.map((props) => {
        return (
          <> 
