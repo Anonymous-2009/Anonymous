@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Navbar from './Navbar';
@@ -16,8 +16,7 @@ export default function Data(){
 }
 
 fetchData()
-  
-    useEffect(() => {
+  useEffect(() => {
       fetchData();
     },[]);
   
@@ -26,10 +25,10 @@ fetchData()
       <Navbar/>
       <div className="bg-blue-100">
         <p className="text-center hover:underline hover:text-blue-500 text-3xl "> the typecase use in coding </p>
-      {data.map((props) => {
+      {data.map((props,index) => {
        return (
          <> 
-        <div className='data' key={props.title}>
+  <div className='data' key={index}>
          <p> {props.title} </p>
          <p> {props.description}</p>
         </div>
