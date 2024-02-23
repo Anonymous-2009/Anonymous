@@ -1,0 +1,12 @@
+p{
+  padding:7px;
+  margin:1.5px;
+}
+
+.data > p:nth-child(odd){
+  text-transform:capitalize;
+}
+
+.data > p:nth-child(even)::first-letter{
+  text-transform:capitalize;
+}

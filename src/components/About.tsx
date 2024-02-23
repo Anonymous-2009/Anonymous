@@ -15,7 +15,7 @@ const About = () => {
             <p className="text-blue-800">We are dedicated to providing the best tools and resources to help individuals and businesses establish their online presence quickly and efficiently.</p>
           </div>
           <div className="md:w-1/2 mt-4 md:mt-0">
-            <img src="https://via.placeholder.com/400" alt="Maxx Website Builder" className="w-full rounded-lg" />
+            <img src="src/assets/react.svg" alt="Maxx Website Builder" className="w-full rounded-lg" />
           </div>
         </div>
       </main>
