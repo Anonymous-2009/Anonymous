@@ -9,7 +9,7 @@ export default function Data(){
   const [data, setData] = useState([]);
 
  const fetchData = async () => {
-   const response = await axios.post('https://f6717121640e4a468d11f3fa642f05ea.api.mockbin.io/');
+   const response = await axios.get('https://f6717121640e4a468d11f3fa642f05ea.api.mockbin.io/');
   
   const data = response.data;
    setData(data);
