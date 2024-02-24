@@ -12,10 +12,9 @@ const login = () => {
   const handleSubmit = (event) => {
    event.preventDefault(); 
    setForm({...form, username:event.target.username.value,
-password:event.target.password.value});; 
-  const result = JSON.stringify(form);
-  localStorage.setItem("set",result);
-  window.location.href = "/";
+password:event.target.password.value});
+  console.log(form);
+  handleReset();
   };
 
   const handleChange = (event) => {
